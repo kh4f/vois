@@ -1,5 +1,8 @@
 <div align="center">
-	<img alt="logo" src="https://raw.githubusercontent.com/voicss/voicss/refs/heads/assets/logo.png">
+	<picture>
+		<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/voicss/voicss/refs/heads/assets/logo-dark.png">
+		<img alt="logo" src="https://raw.githubusercontent.com/voicss/voicss/refs/heads/assets/logo-light.png">
+	</picture>
 	<br>
 	A lightweight compile-time <b>CSS-in-TS library</b> for React
 	<br><br>
