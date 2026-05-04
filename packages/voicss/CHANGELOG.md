@@ -1,6 +1,14 @@
 # Changelog
 
 
+## &ensp; [` 📦 voicss@0.1.1  `](https://github.com/voicss/voicss/compare/voicss@0.1.0...voicss@0.1.1)
+
+### &emsp; 📋 Docs
+- **Theme-aware logo**: updated the README to display appropriate light or dark logo variants based on the active theme. [🡥](https://github.com/voicss/voicss/commit/f62dfba)
+
+##### &emsp;&emsp; [Full Changelog](https://github.com/voicss/voicss/compare/voicss@0.1.0...voicss@0.1.1) &ensp;•&ensp; May 4, 2026
+
+
 ## &ensp; [` 📦 voicss@0.1.0  `](https://github.com/voicss/voicss/commits/voicss@0.1.0)
 
 ### &emsp; 🧨 BREAKING CHANGES
