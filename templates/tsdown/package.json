@@ -18,7 +18,7 @@
 		"@voicss/eslint": "^0.3.0",
 		"@voicss/vite": "workspace:*",
 		"eslint": "^10.3.0",
-		"jiti": "^2.6.1",
+		"jiti": "^2.7.0",
 		"tsdown": "^0.21.10",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.59.2",
