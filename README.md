@@ -7,9 +7,9 @@
 	A lightweight compile-time <b>CSS-in-TS library</b> for React
 	<br><br>
 	<p>
-		<a href="https://www.npmjs.com/package/voicss"><img src="https://img.shields.io/npm/v/voicss?style=flat-square&logo=npm&label=npm&labelColor=453038&color=E6DACA" alt="npm version"/></a>&nbsp;
-		<a href="https://github.com/voicss/voicss/issues?q=is%3Aissue+is%3Aopen+label%3Abug"><img src="https://img.shields.io/github/issues/voicss/voicss/bug?style=flat-square&label=%F0%9F%90%9B%20Bugs&labelColor=453038&color=E6DACA" alt="bugs"></a>&nbsp;
-		<a href="https://github.com/voicss/voicss/blob/master/LICENSE"><img src="https://img.shields.io/github/license/voicss/voicss?style=flat-square&label=%F0%9F%9B%A1%EF%B8%8F%20License&labelColor=453038&color=E6DACA" alt="license"></a>&nbsp;
+		<a href="https://www.npmjs.com/package/voicss"><img src="https://img.shields.io/npm/v/voicss?style=flat-square&logo=npm&label=npm&labelColor=532D38&color=E6DACA" alt="npm version"/></a>&nbsp;
+		<a href="https://github.com/voicss/voicss/issues?q=is%3Aissue+is%3Aopen+label%3Abug"><img src="https://img.shields.io/github/issues/voicss/voicss/bug?style=flat-square&label=%F0%9F%90%9B%20Bugs&labelColor=532D38&color=E6DACA" alt="bugs"></a>&nbsp;
+		<a href="https://github.com/voicss/voicss/blob/master/LICENSE"><img src="https://img.shields.io/github/license/voicss/voicss?style=flat-square&label=%F0%9F%9B%A1%EF%B8%8F%20License&labelColor=532D38&color=E6DACA" alt="license"></a>&nbsp;
 	</p>
 	<p><b>
 		<a href="#-overview">Overview</a>&nbsp; •&nbsp;

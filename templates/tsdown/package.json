@@ -3,25 +3,25 @@
 	"description": "🧩 Voicss + tsdown Template",
 	"type": "module",
 	"scripts": {
-		"build": "tsdown",
-		"build:watch": "tsdown -w",
-		"build:prod": "tsdown -p",
-		"lint": "eslint",
+		"dev": "tsdown",
+		"watch": "tsdown -w",
+		"build": "tsdown -p",
 		"typecheck": "tsc",
+		"lint": "eslint",
 		"release": "bunx relion"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@stylistic/eslint-plugin": "^5.10.0",
 		"@tsdown/css": "^0.22.0",
-		"@types/bun": "^1.3.13",
+		"@types/bun": "^1.3.14",
 		"@voicss/eslint": "^0.3.0",
 		"@voicss/vite": "workspace:*",
-		"eslint": "^10.3.0",
+		"eslint": "^10.4.0",
 		"jiti": "^2.7.0",
 		"tsdown": "^0.22.0",
 		"typescript": "^6.0.3",
-		"typescript-eslint": "^8.59.2",
+		"typescript-eslint": "^8.59.4",
 		"voicss": "workspace:*"
 	}
 }

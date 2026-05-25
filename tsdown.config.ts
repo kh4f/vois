@@ -1,9 +1,9 @@
 import type { UserConfig } from 'tsdown'
 
-const isProd = process.argv.includes('-p')
+const prod = process.argv.includes('-p')
 
 export default {
-	minify: isProd,
-	sourcemap: isProd ? false : 'inline',
+	minify: prod,
+	sourcemap: prod ? false : 'inline',
 	fixedExtension: false,
 } satisfies UserConfig
