@@ -15,7 +15,7 @@
 	"scripts": {
 		"dev": "tsdown",
 		"watch": "tsdown -w",
-		"prod": "tsdown -p",
+		"prod": "bun -b tsdown -p",
 		"typecheck": "tsc",
 		"lint": "eslint",
 		"test": "bun test",

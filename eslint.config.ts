@@ -30,7 +30,6 @@ export default defineConfig([
 			'@stylistic/indent-binary-ops': ['error', 'tab'],
 			'@stylistic/brace-style': ['error', '1tbs'],
 			'@stylistic/arrow-parens': ['error', 'as-needed'],
-			'@stylistic/comma-dangle': ['error', 'only-multiline'],
 			'@stylistic/eol-last': ['error', 'never'],
 		},
 	},
