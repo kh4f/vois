@@ -1,6 +1,14 @@
 # Changelog
 
 
+## &ensp; [` 📦 @voicss/vite@0.2.2  `](https://github.com/voicss/voicss/compare/@voicss/vite@0.2.1...@voicss/vite@0.2.2)
+
+### &emsp; 🩹 Fixes
+- **Reliable core bundling**: `voicss` is now always inlined into the plugin output, even when `voicss/dist` hasn't been built yet. [🡥](https://github.com/voicss/voicss/commit/104d49d)
+
+##### &emsp;&emsp; [Full Changelog](https://github.com/voicss/voicss/compare/@voicss/vite@0.2.1...@voicss/vite@0.2.2) &ensp;•&ensp; Jun 9, 2026
+
+
 ## &ensp; [` 📦 @voicss/vite@0.2.1  `](https://github.com/voicss/voicss/compare/@voicss/vite@0.2.0...@voicss/vite@0.2.1)
 
 ### &emsp; 🩹 Fixes
