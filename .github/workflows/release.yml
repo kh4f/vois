@@ -24,7 +24,7 @@ jobs:
           echo -e "DIR=$DIR\nPACKAGE=$PACKAGE\nVERSION=$VERSION\nZIP=$ZIP" >> $GITHUB_ENV
 
       - run: bun i
-      - run: bun -b run build
+      - run: bun prod
       - run: bun typecheck
       - run: bun lint
       - run: bun test

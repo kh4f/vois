@@ -10,7 +10,7 @@ jobs:
       - uses: oven-sh/setup-bun@v2
 
       - run: bun i
-      - run: bun -b run build
+      - run: bun prod
       - run: bun typecheck
       - run: bun lint
       - run: bun test
