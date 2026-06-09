@@ -4,12 +4,12 @@
 		<img alt="logo" src="https://raw.githubusercontent.com/voicss/voicss/refs/heads/assets/logo-light.png">
 	</picture>
 	<br>
-	A lightweight compile-time <b>CSS-in-TS library</b> for React
+	A lightweight <b>zero-runtime CSS-in-TS</b> toolkit
 	<br><br>
 	<p>
-		<a href="https://www.npmjs.com/package/voicss"><img src="https://img.shields.io/npm/v/voicss?style=flat-square&logo=npm&label=npm&labelColor=532D38&color=E6DACA" alt="npm version"/></a>&nbsp;
-		<a href="https://github.com/voicss/voicss/issues?q=is%3Aissue+is%3Aopen+label%3Abug"><img src="https://img.shields.io/github/issues/voicss/voicss/bug?style=flat-square&label=%F0%9F%90%9B%20Bugs&labelColor=532D38&color=E6DACA" alt="bugs"></a>&nbsp;
-		<a href="https://github.com/voicss/voicss/blob/master/LICENSE"><img src="https://img.shields.io/github/license/voicss/voicss?style=flat-square&label=%F0%9F%9B%A1%EF%B8%8F%20License&labelColor=532D38&color=E6DACA" alt="license"></a>&nbsp;
+		<a href="https://www.npmjs.com/package/voicss"><img src="https://img.shields.io/npm/v/voicss?style=flat-square&logo=npm&label=npm&labelColor=612838&color=D8C8C2" alt="npm version"/></a>&nbsp;
+		<a href="https://github.com/voicss/voicss/issues?q=is%3Aissue+is%3Aopen+label%3Abug"><img src="https://img.shields.io/github/issues/voicss/voicss/bug?style=flat-square&label=%F0%9F%90%9B%20Bugs&labelColor=612838&color=D8C8C2" alt="bugs"></a>&nbsp;
+		<a href="https://github.com/voicss/voicss/blob/master/LICENSE"><img src="https://img.shields.io/github/license/voicss/voicss?style=flat-square&label=%F0%9F%9B%A1%EF%B8%8F%20License&labelColor=612838&color=D8C8C2" alt="license"></a>&nbsp;
 	</p>
 	<p><b>
 		<a href="#-overview">Overview</a>&nbsp; •&nbsp;
@@ -20,17 +20,15 @@
 </div>
 
 ## 👀 Overview
-**Voicss** (/vɔɪs/) is a compile-time CSS-in-TS library that brings a **fully native CSS experience** directly into `.ts(x)` files. 
-
-Its core is just [one line of code](packages/voicss/src/index.ts), and styling is done via the `` void `css ...` `` block syntax.
+**Voicss** (/vɔɪs/) is a bundler plugin that extracts `` void `css ...` `` blocks from `.ts(x)` files into native CSS.
 
 ### 🔥 Features
-- **⚡ True Zero Runtime:** styles are extracted at build time, no JS in production
+- **⚡ True zero-runtime:** styles are extracted at build time, no JS in production
 - **💎 Native CSS:** write standard CSS with all modern features
-- **📦 Modern Bundlers:** first-class support for Next.js and Vite
+- **📦 Modern bundlers:** first-class support for Next.js and Vite
 - **🔥 HMR:** instant style updates during development
-- **🧩 [VS Code Extension](https://github.com/voicss/voicss-vscode):** syntax highlighting, autocomplete, validation, and more
-- **🧹 [ESLint Plugin](https://github.com/voicss/voicss-eslint):** CSS linting in template literals
+- **🧩 [VS Code extension](https://github.com/voicss/voicss-vscode):** syntax highlighting, autocomplete, validation, and more
+- **🧹 [ESLint plugin](https://github.com/voicss/voicss-eslint):** CSS linting in template literals
 
 ## 🏁 Quick Start
 Scaffold a [demo project](templates) for your platform (Next.js/Vite/tsdown):
@@ -39,14 +37,24 @@ bun create voicss
 ```
 
 ## 🕹️ Usage
-### 1. Install core and a bundler plugin:
+### Vite
 ```bash
-bun add -D voicss @voicss/next  # for Next.js
-bun add -D voicss @voicss/vite  # for Vite
+bun add -D @voicss/vite
+```
+```ts
+// vite.config.ts
+import type { UserConfig } from 'vite'
+import voicss from '@voicss/vite'
+
+export default {
+	plugins: [voicss()],
+} satisfies UserConfig
 ```
 
-### 2. Configure the bundler to use the plugin:
-#### Next.js
+### Next.js
+```bash
+bun add -D @voicss/next
+```
 ```ts
 // next.config.ts
 import type { NextConfig } from 'next'
@@ -56,19 +64,3 @@ export default {
 	turbopack: { rules: { ...voicssTurboRule } },
 } satisfies NextConfig
 ```
-
-#### Vite
-```ts
-// vite.config.ts
-import type { UserConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import voicss from '@voicss/vite'
-
-export default {
-	plugins: [react(), voicss()],
-} satisfies UserConfig
-```
-
-### 3. Start styling
-Write standard CSS inside your `.ts(x)` files using the `` void `css ...` `` syntax.
-The bundler extracts these blocks into real CSS at build time — resulting in zero runtime overhead.

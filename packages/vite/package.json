@@ -20,8 +20,10 @@
 		"lint": "eslint",
 		"release": "bunx relion -t @voicss/vite@"
 	},
+	"devDependencies": {
+		"voicss": "workspace:*"
+	},
 	"peerDependencies": {
-		"voicss": "workspace:>=0",
 		"vite": "*"
 	}
 }
