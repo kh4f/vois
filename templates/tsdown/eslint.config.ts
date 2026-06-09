@@ -1,6 +1,6 @@
 import { defineConfig, globalIgnores } from 'eslint/config'
-import eslint from '@eslint/js'
-import tseslint from 'typescript-eslint'
+import js from '@eslint/js'
+import ts from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
 import voicss from '@voicss/eslint'
 
@@ -9,12 +9,12 @@ export default defineConfig([
 	{
 		name: 'Base Rules',
 		files: ['**/*.ts'],
-		extends: [eslint.configs.recommended],
+		extends: [js.configs.recommended],
 	},
 	{
 		name: 'Type-Aware Rules',
 		files: ['**/*.ts'],
-		extends: [tseslint.configs.strictTypeChecked, tseslint.configs.stylisticTypeChecked],
+		extends: [ts.configs.strictTypeChecked, ts.configs.stylisticTypeChecked],
 		languageOptions: { parserOptions: { projectService: true, tsconfigRootDir: import.meta.dirname } },
 		rules: { '@typescript-eslint/restrict-template-expressions': 'off' },
 	},
@@ -28,7 +28,6 @@ export default defineConfig([
 			'@stylistic/indent-binary-ops': ['error', 'tab'],
 			'@stylistic/brace-style': ['error', '1tbs'],
 			'@stylistic/arrow-parens': ['error', 'as-needed'],
-			'@stylistic/comma-dangle': ['error', 'only-multiline'],
 			'@stylistic/eol-last': ['error', 'never'],
 		},
 	},

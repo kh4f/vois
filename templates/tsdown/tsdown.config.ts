@@ -1,5 +1,5 @@
-import type { UserConfig } from 'tsdown'
 import voicss from '@voicss/vite'
+import type { UserConfig } from 'tsdown'
 
 const prod = process.argv.includes('-p')
 

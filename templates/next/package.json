@@ -4,8 +4,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "next",
-		"build": "next build",
-		"start": "next start",
+		"prod": "next build",
+		"preview": "next start",
 		"typecheck": "tsc",
 		"lint": "eslint",
 		"release": "bunx relion",
@@ -32,7 +32,6 @@
 		"eslint-plugin-react-hooks": "^7.1.1",
 		"jiti": "^2.7.0",
 		"typescript": "^6.0.3",
-		"typescript-eslint": "^8.59.4",
-		"voicss": "workspace:*"
+		"typescript-eslint": "^8.59.4"
 	}
 }

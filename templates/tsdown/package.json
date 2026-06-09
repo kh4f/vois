@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "tsdown",
 		"watch": "tsdown -w",
-		"build": "tsdown -p",
+		"prod": "bun -b tsdown -p",
 		"typecheck": "tsc",
 		"lint": "eslint",
 		"release": "bunx relion"
@@ -22,6 +22,5 @@
 		"tsdown": "^0.22.0",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.59.4",
-		"voicss": "workspace:*"
 	}
 }
