@@ -1,6 +1,14 @@
 # Changelog
 
 
+## &ensp; [` 📦 @voicss/vite@0.2.1  `](https://github.com/voicss/voicss/compare/@voicss/vite@0.2.0...@voicss/vite@0.2.1)
+
+### &emsp; 🩹 Fixes
+- **Consistent builds across environments**: fixed an issue where the bundled output differed between local and CI due to a stale lockfile after the peer dependency restructure. [🡥](https://github.com/voicss/voicss/commit/1546f99)
+
+##### &emsp;&emsp; [Full Changelog](https://github.com/voicss/voicss/compare/@voicss/vite@0.2.0...@voicss/vite@0.2.1) &ensp;•&ensp; Jun 9, 2026
+
+
 ## &ensp; [` 📦 @voicss/vite@0.2.0  `](https://github.com/voicss/voicss/compare/@voicss/vite@0.1.0...@voicss/vite@0.2.0)
 
 ### &emsp; 🧨 BREAKING CHANGES
