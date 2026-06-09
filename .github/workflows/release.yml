@@ -37,7 +37,7 @@ jobs:
         working-directory: packages/${{ env.DIR }}
       - uses: actions/attest@v4
         with:
-          subject-path: ${{ env.ZIP }}
+          subject-path: packages/${{ env.DIR }}/${{ env.ZIP }}
       - run: bun pm pack && npm publish *.tgz
         working-directory: packages/${{ env.DIR }}
       - run: gh release create $TAG --title $TAG --draft $ZIP
