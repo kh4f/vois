@@ -1,6 +1,14 @@
 # Changelog
 
 
+## &ensp; [` 📦 voicss@0.1.2  `](https://github.com/voicss/voicss/compare/voicss@0.1.1...voicss@0.1.2)
+
+### &emsp; 📋 Docs
+- **Updated install instructions**: the README now reflects that users only need to install a bundler plugin (`@voicss/vite` or `@voicss/next`) instead of `voicss` plus a plugin. [🡥](https://github.com/voicss/voicss/commit/29f2e31)
+
+##### &emsp;&emsp; [Full Changelog](https://github.com/voicss/voicss/compare/voicss@0.1.1...voicss@0.1.2) &ensp;•&ensp; Jun 9, 2026
+
+
 ## &ensp; [` 📦 voicss@0.1.1  `](https://github.com/voicss/voicss/compare/voicss@0.1.0...voicss@0.1.1)
 
 ### &emsp; 📋 Docs
