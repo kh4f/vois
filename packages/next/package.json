@@ -15,7 +15,7 @@
 	"scripts": {
 		"dev": "tsdown",
 		"watch": "tsdown -w",
-		"build": "tsdown -p",
+		"prod": "tsdown -p",
 		"typecheck": "tsc",
 		"lint": "eslint",
 		"release": "bunx relion -t @voicss/next@"

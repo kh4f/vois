@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "bun -F './packages/*' dev",
 		"watch": "bun --parallel -F './packages/*' watch",
-		"build": "bun -F './packages/*' build",
+		"prod": "bun -F './packages/*' build",
 		"typecheck": "bun -F './packages/*' typecheck",
 		"lint": "bun -F './packages/*' lint",
 		"test": "bun -F './packages/*' test"
