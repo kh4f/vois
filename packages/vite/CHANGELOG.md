@@ -1,6 +1,14 @@
 # Changelog
 
 
+## &ensp; [` 📦 @voicss/vite@0.2.3  `](https://github.com/voicss/voicss/compare/@voicss/vite@0.2.2...@voicss/vite@0.2.3)
+
+### &emsp; 🩹 Fixes
+- **Sourcemap generation**: the plugin now emits a proper sourcemap when prepending the virtual CSS import, which removes the Rolldown `[SOURCEMAP_BROKEN]` warning. [🡥](https://github.com/voicss/voicss/commit/83e8f05)
+
+##### &emsp;&emsp; [Full Changelog](https://github.com/voicss/voicss/compare/@voicss/vite@0.2.2...@voicss/vite@0.2.3) &ensp;•&ensp; Jun 9, 2026
+
+
 ## &ensp; [` 📦 @voicss/vite@0.2.2  `](https://github.com/voicss/voicss/compare/@voicss/vite@0.2.1...@voicss/vite@0.2.2)
 
 ### &emsp; 🩹 Fixes
