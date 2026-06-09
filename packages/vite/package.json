@@ -20,6 +20,9 @@
 		"lint": "eslint",
 		"release": "bunx relion -t @voicss/vite@"
 	},
+	"dependencies": {
+		"magic-string": "^0.30.17"
+	},
 	"devDependencies": {
 		"voicss": "workspace:*"
 	},

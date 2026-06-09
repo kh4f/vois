@@ -1,5 +1,6 @@
-import type { Plugin } from 'vite'
+import MagicString from 'magic-string'
 import { extractCss } from 'voicss'
+import type { Plugin } from 'vite'
 
 const CSS_EXTRACTABLE_FILES = /\.(ts|tsx)$/
 const VIRTUAL_PREFIX = 'virtual:voicss/'
@@ -23,10 +24,12 @@ export default (): Plugin => ({
 	transform(code, id) {
 		if (!CSS_EXTRACTABLE_FILES.test(id)) return
 		const css = extractCss(code)
-		if (!css) return code
+		if (!css) return
 		const cssId = normalizePath(id + '.css')
 		styles.set(cssId, css)
-		return `import '${VIRTUAL_PREFIX}${cssId}';${code}`
+		const s = new MagicString(code)
+		s.prepend(`import '${VIRTUAL_PREFIX}${cssId}';`)
+		return { code: s.toString(), map: s.generateMap({ hires: true }) }
 	},
 	async handleHotUpdate({ file, server, modules, read }) {
 		if (!CSS_EXTRACTABLE_FILES.test(file)) return
