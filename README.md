@@ -9,7 +9,7 @@
 	<p>
 		<a href="https://www.npmjs.com/package/voicss"><img src="https://img.shields.io/npm/v/voicss?style=flat-square&logo=npm&label=npm&labelColor=612838&color=D8C8C2" alt="npm version"/></a>&nbsp;
 		<a href="https://github.com/voicss/voicss/issues?q=is%3Aissue+is%3Aopen+label%3Abug"><img src="https://img.shields.io/github/issues/voicss/voicss/bug?style=flat-square&label=%F0%9F%90%9B%20Bugs&labelColor=612838&color=D8C8C2" alt="bugs"></a>&nbsp;
-		<a href="https://github.com/voicss/voicss/blob/master/LICENSE"><img src="https://img.shields.io/github/license/voicss/voicss?style=flat-square&label=%F0%9F%9B%A1%EF%B8%8F%20License&labelColor=612838&color=D8C8C2" alt="license"></a>&nbsp;
+		<a href="https://github.com/voicss/voicss/blob/main/LICENSE"><img src="https://img.shields.io/github/license/voicss/voicss?style=flat-square&label=%F0%9F%9B%A1%EF%B8%8F%20License&labelColor=612838&color=D8C8C2" alt="license"></a>&nbsp;
 	</p>
 	<p><b>
 		<a href="#-overview">Overview</a>&nbsp; •&nbsp;
