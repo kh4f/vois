@@ -20,7 +20,7 @@
 </div>
 
 ## 👀 Overview
-**Voicss** (/vɔɪs/) is a bundler plugin that extracts `` void `css ...` `` blocks from `.ts(x)` files into native CSS.
+**Voicss** is a bundler plugin that extracts `` void `css ...` `` blocks from `.ts(x)` files into native CSS.
 
 ### 🔥 Features
 - **⚡ True zero-runtime:** styles are extracted at build time, no JS in production
