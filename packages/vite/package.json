@@ -1,13 +1,13 @@
 {
-	"name": "@voicss/vite",
-	"version": "0.2.3",
-	"description": "🔌 Voicss Vite Plugin",
+	"name": "@vois/vite",
+	"version": "0.0.0",
+	"description": "🔌 Vois Vite Plugin",
 	"author": "kh4f",
 	"license": "MIT",
-	"repository": "https://github.com/voicss/voicss",
-	"bugs": "https://github.com/voicss/voicss/issues",
-	"homepage": "https://github.com/voicss/voicss#readme",
-	"keywords": ["voicss", "voicss-vite", "css-in-ts", "vite-plugin"],
+	"repository": "https://github.com/kh4f/vois",
+	"bugs": "https://github.com/kh4f/vois/issues",
+	"homepage": "https://github.com/kh4f/vois#readme",
+	"keywords": ["vois", "vois-vite", "css-in-ts", "vite-plugin"],
 	"files": ["dist"],
 	"type": "module",
 	"main": "dist/index.js",
@@ -18,13 +18,13 @@
 		"prod": "bun -b tsdown -p",
 		"typecheck": "tsc",
 		"lint": "eslint",
-		"release": "bunx relion -t @voicss/vite@"
+		"release": "bunx relion -t @vois/vite@"
 	},
 	"dependencies": {
 		"magic-string": "^0.30.17"
 	},
 	"devDependencies": {
-		"voicss": "workspace:*"
+		"vois": "workspace:*"
 	},
 	"peerDependencies": {
 		"vite": "*"

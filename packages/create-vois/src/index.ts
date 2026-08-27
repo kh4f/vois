@@ -4,7 +4,7 @@ import { handleCancel, resolveWorkspaceDeps } from './utils'
 
 void (async () => {
 	console.log()
-	intro('Create a new Voicss project')
+	intro('Create a new Vois project')
 
 	const platform = await select({ message: 'Pick a platform:', options: [
 		{ label: 'Next.js', value: 'next' },
@@ -15,14 +15,14 @@ void (async () => {
 
 	const projectName = await text({
 		message: 'Project name:',
-		defaultValue: `voicss-${platform}`,
-		placeholder: `voicss-${platform}`,
+		defaultValue: `vois-${platform}`,
+		placeholder: `vois-${platform}`,
 	})
 	handleCancel(projectName)
 
 	const s = spinner()
 	s.start('Scaffolding project...')
-	await downloadTemplate(`gh:voicss/voicss/templates/${platform}`, { dir: projectName })
+	await downloadTemplate(`gh:kh4f/vois/templates/${platform}`, { dir: projectName })
 	await resolveWorkspaceDeps(projectName)
 	s.stop('Project scaffolded successfully!')
 

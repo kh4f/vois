@@ -1,13 +1,13 @@
 {
-	"name": "voicss",
-	"version": "0.1.3",
+	"name": "vois",
+	"version": "0.0.0",
 	"description": "⚡ Ultra‑light Compile‑time CSS‑in‑TS",
 	"author": "kh4f",
 	"license": "MIT",
-	"repository": "https://github.com/voicss/voicss",
-	"bugs": "https://github.com/voicss/voicss/issues",
-	"homepage": "https://github.com/voicss/voicss#readme",
-	"keywords": ["voicss", "voicss-core", "css-in-ts"],
+	"repository": "https://github.com/kh4f/vois",
+	"bugs": "https://github.com/kh4f/vois/issues",
+	"homepage": "https://github.com/kh4f/vois#readme",
+	"keywords": ["vois", "vois-core", "css-in-ts"],
 	"files": ["dist", "README.md"],
 	"type": "module",
 	"main": "dist/index.js",
@@ -19,7 +19,7 @@
 		"typecheck": "tsc",
 		"lint": "eslint",
 		"test": "bun test",
-		"release": "bunx relion -t voicss@",
+		"release": "bunx relion -t vois@",
 		"prepack": "cp ../../README.md .",
 		"postpack": "rm README.md"
 	}

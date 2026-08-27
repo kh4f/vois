@@ -5,7 +5,7 @@ import react from '@eslint-react/eslint-plugin'
 import hooks from 'eslint-plugin-react-hooks'
 import next from '@next/eslint-plugin-next'
 import stylistic from '@stylistic/eslint-plugin'
-import voicss from '@voicss/eslint'
+import vois from '@vois/eslint'
 
 export default defineConfig([
 	globalIgnores(['dist', '.next', 'next-env.d.ts']),
@@ -34,7 +34,7 @@ export default defineConfig([
 	{
 		name: 'Stylistic Rules',
 		files: ['**/*.ts?(x)'],
-		extends: [stylistic.configs.recommended, voicss.configs.recommended],
+		extends: [stylistic.configs.recommended, vois.configs.recommended],
 		rules: {
 			'@stylistic/no-tabs': 'off',
 			'@stylistic/indent': ['error', 'tab'],

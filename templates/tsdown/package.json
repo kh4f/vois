@@ -1,6 +1,6 @@
 {
-	"name": "voicss-tsdown",
-	"description": "🧩 Voicss + tsdown Template",
+	"name": "vois-tsdown",
+	"description": "🧩 Vois + tsdown Template",
 	"type": "module",
 	"scripts": {
 		"dev": "tsdown",
@@ -15,8 +15,8 @@
 		"@stylistic/eslint-plugin": "^5.10.0",
 		"@tsdown/css": "^0.22.2",
 		"@types/bun": "^1.3.14",
-		"@voicss/eslint": "^0.3.0",
-		"@voicss/vite": "workspace:*",
+		"@vois/eslint": "^0.3.0",
+		"@vois/vite": "workspace:*",
 		"eslint": "^10.4.1",
 		"jiti": "^2.7.0",
 		"tsdown": "^0.22.2",

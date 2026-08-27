@@ -7,5 +7,5 @@ export default {
 	minify: prod,
 	sourcemap: prod ? false : 'inline',
 	fixedExtension: false,
-	alias: { voicss: resolve(import.meta.dirname, 'packages/voicss/src') },
+	alias: { vois: resolve(import.meta.dirname, 'packages/vois/src') },
 } satisfies UserConfig

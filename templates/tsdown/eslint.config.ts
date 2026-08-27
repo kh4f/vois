@@ -2,7 +2,7 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 import js from '@eslint/js'
 import ts from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
-import voicss from '@voicss/eslint'
+import vois from '@vois/eslint'
 
 export default defineConfig([
 	globalIgnores(['dist']),
@@ -21,7 +21,7 @@ export default defineConfig([
 	{
 		name: 'Stylistic Rules',
 		files: ['**/*.ts'],
-		extends: [stylistic.configs.recommended, voicss.configs.recommended],
+		extends: [stylistic.configs.recommended, vois.configs.recommended],
 		rules: {
 			'@stylistic/no-tabs': 'off',
 			'@stylistic/indent': ['error', 'tab'],

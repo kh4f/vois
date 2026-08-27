@@ -1,29 +1,26 @@
 {
-	"name": "@vois/next",
+	"name": "create-vois",
 	"version": "0.0.0",
-	"description": "🔌 Vois Next Plugin",
+	"description": "🪄 Vois Starter CLI",
 	"author": "kh4f",
 	"license": "MIT",
 	"repository": "https://github.com/kh4f/vois",
 	"bugs": "https://github.com/kh4f/vois/issues",
 	"homepage": "https://github.com/kh4f/vois#readme",
-	"keywords": ["vois", "vois-next", "css-in-ts", "next-plugin"],
+	"keywords": ["vois", "create-vois", "css-in-ts"],
 	"files": ["dist"],
 	"type": "module",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"bin": "dist/index.js",
 	"scripts": {
 		"dev": "tsdown",
 		"watch": "tsdown -w",
 		"prod": "bun -b tsdown -p",
 		"typecheck": "tsc",
 		"lint": "eslint",
-		"release": "bunx relion -t @vois/next@"
+		"release": "bunx relion -t create-vois@"
 	},
-	"devDependencies": {
-		"vois": "workspace:*"
-	},
-	"peerDependencies": {
-		"next": "*"
+	"dependencies": {
+		"@clack/prompts": "^1.4.0",
+		"giget": "^3.2.0"
 	}
 }
