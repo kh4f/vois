@@ -16,7 +16,7 @@
 		"@tsdown/css": "^0.22.2",
 		"@types/bun": "^1.3.14",
 		"@vois/eslint": "^0.3.0",
-		"@vois/vite": "workspace:*",
+		"vois": "workspace:*",
 		"eslint": "^10.4.1",
 		"jiti": "^2.7.0",
 		"tsdown": "^0.22.2",

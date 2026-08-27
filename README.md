@@ -39,12 +39,12 @@ bun create vois
 ## 🕹️ Usage
 ### Vite
 ```bash
-bun add -D @vois/vite
+bun add -D vois
 ```
 ```ts
 // vite.config.ts
 import type { UserConfig } from 'vite'
-import vois from '@vois/vite'
+import vois from 'vois/vite'
 
 export default {
 	plugins: [vois()],
@@ -53,12 +53,12 @@ export default {
 
 ### Next.js
 ```bash
-bun add -D @vois/next
+bun add -D vois
 ```
 ```ts
 // next.config.ts
 import type { NextConfig } from 'next'
-import { voisTurboRule } from '@vois/next'
+import { voisTurboRule } from 'vois/next'
 
 export default {
 	turbopack: { rules: { ...voisTurboRule } },

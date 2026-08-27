@@ -1,4 +1,4 @@
-import { voisTurboRule } from '@vois/next'
+import { voisTurboRule } from 'vois/next'
 import type { NextConfig } from 'next'
 
 export default {

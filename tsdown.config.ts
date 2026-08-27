@@ -7,5 +7,4 @@ export default {
 	minify: prod,
 	sourcemap: prod ? false : 'inline',
 	fixedExtension: false,
-	alias: { vois: resolve(import.meta.dirname, 'packages/vois/src') },
 } satisfies UserConfig

@@ -2,11 +2,11 @@ import { mkdirSync, writeFileSync } from 'node:fs'
 import { join, resolve, relative, dirname } from 'node:path'
 import { createHash } from 'node:crypto'
 import type { NextConfig } from 'next'
-import { extractCss } from 'vois'
+import { extractCss } from './index'
 
 export const voisTurboRule: Required<Required<NextConfig>['turbopack']>['rules'] = {
 	'*': {
-		loaders: ['@vois/next'],
+		loaders: ['vois/next'],
 		condition: { all: [{ not: 'foreign' }, { path: /\.(ts|tsx)$/ }] },
 	},
 }

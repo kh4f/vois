@@ -7,11 +7,25 @@
 	"repository": "https://github.com/kh4f/vois",
 	"bugs": "https://github.com/kh4f/vois/issues",
 	"homepage": "https://github.com/kh4f/vois#readme",
-	"keywords": ["vois", "vois-core", "css-in-ts"],
+	"keywords": ["vois", "vois-core", "css-in-ts", "vite-plugin", "next-plugin"],
 	"files": ["dist", "README.md"],
 	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		},
+		"./vite": {
+			"types": "./dist/vite.d.ts",
+			"import": "./dist/vite.js"
+		},
+		"./next": {
+			"types": "./dist/next.d.ts",
+			"import": "./dist/next.js"
+		}
+	},
 	"scripts": {
 		"dev": "tsdown",
 		"watch": "tsdown -w",
@@ -22,5 +36,21 @@
 		"release": "bunx relion -t vois@",
 		"prepack": "cp ../../README.md .",
 		"postpack": "rm README.md"
+	},
+	"dependencies": {
+		"magic-string": "^0.30.17"
+	},
+	"devDependencies": {
+		"@types/node": "^25.9.2",
+		"next": "^16.2.7",
+		"vite": "^8.0.16"
+	},
+	"peerDependencies": {
+		"next": "*",
+		"vite": "*"
+	},
+	"peerDependenciesMeta": {
+		"next": { "optional": true },
+		"vite": { "optional": true }
 	}
 }
