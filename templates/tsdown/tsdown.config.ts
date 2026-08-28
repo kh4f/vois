@@ -1,11 +1,7 @@
+import { defineConfig } from 'tsdown'
 import vois from 'vois/vite'
-import type { UserConfig } from 'tsdown'
 
-const prod = process.argv.includes('-p')
-
-export default {
-	minify: prod,
-	sourcemap: prod ? false : 'inline',
+export default defineConfig({
 	fixedExtension: false,
 	plugins: [vois()],
-} satisfies UserConfig
+})
