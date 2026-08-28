@@ -1,6 +1,3 @@
-import { defineConfig } from 'eslint/config'
 import kh4f from '@kh4f/eslint-config'
 
-export default defineConfig([
-	kh4f({ next: true }),
-])
+export default await kh4f({ next: true })
