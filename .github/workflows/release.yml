@@ -7,40 +7,32 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions: { contents: write, id-token: write, attestations: write }
+    permissions:
+      contents: write
+      id-token: write
     env:
       TAG: ${{ github.ref_name }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
-        with: { node-version: latest, registry-url: https://registry.npmjs.org }
+        with:
+          registry-url: https://registry.npmjs.org
       - uses: oven-sh/setup-bun@v2
 
-      - name: Set env variables
-        run: |
+      - run: |
           [[ $TAG =~ ^((@.+?\/)?(.+))@(.+)$ ]]
           PACKAGE=${BASH_REMATCH[1]}
           DIR=${BASH_REMATCH[3]}
           VERSION=${BASH_REMATCH[4]}
-          ZIP=${PACKAGE/@vois\//vois-}-v$VERSION.zip
-          echo -e "DIR=$DIR\nPACKAGE=$PACKAGE\nVERSION=$VERSION\nZIP=$ZIP" >> $GITHUB_ENV
+          echo -e "DIR=$DIR\nPACKAGE=$PACKAGE\nVERSION=$VERSION" >> $GITHUB_ENV
 
       - run: bun i
       - run: bun lint
       - run: bun run build
 
-      - run: |
-          cp ../../LICENSE .
-          zip -r $ZIP dist package.json LICENSE \
-            $([[ $DIR == "vois" ]] && cp ../../README.md . && echo README.md || true)
-          rm -f LICENSE README.md
-        working-directory: packages/${{ env.DIR }}
-      - uses: actions/attest@v4
-        with:
-          subject-path: packages/${{ env.DIR }}/${{ env.ZIP }}
       - run: bun pm pack && npm publish *.tgz
         working-directory: packages/${{ env.DIR }}
-      - run: gh release create $TAG --title $TAG --draft $ZIP
+      - run: gh release create $TAG --title $TAG --draft
         working-directory: packages/${{ env.DIR }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
