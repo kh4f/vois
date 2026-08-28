@@ -1,6 +1,6 @@
 import { defineConfig } from 'tsdown'
 
 export default defineConfig({
-	entry: ['src/index.ts', 'src/vite.ts', 'src/next.ts'],
+	entry: 'src/{index,vite,next}.ts',
 	fixedExtension: false,
 })
