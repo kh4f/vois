@@ -6,7 +6,7 @@
 		"lint": "bun -F './packages/*' lint"
 	},
 	"devDependencies": {
-		"@kh4f/eslint-config": "^0.4.0",
+		"@kh4f/eslint-config": "^0.4.2",
 		"@types/bun": "^1.4.0",
 		"eslint": "^10.9.1",
 		"tsdown": "0.22.14",
