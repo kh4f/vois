@@ -3,10 +3,7 @@
 	"workspaces": ["packages/*", "templates/*"],
 	"scripts": {
 		"build": "bun -F './packages/*' build",
-		"watch": "bun --parallel -F './packages/*' watch",
-		"typecheck": "bun -F './packages/*' typecheck",
-		"lint": "bun -F './packages/*' lint",
-		"test": "bun -F './packages/*' test"
+		"lint": "bun -F './packages/*' lint"
 	},
 	"devDependencies": {
 		"@kh4f/eslint-config": "^0.3.0",

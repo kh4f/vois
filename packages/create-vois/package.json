@@ -13,9 +13,7 @@
 	"bin": "dist/index.js",
 	"scripts": {
 		"build": "tsdown",
-		"watch": "tsdown -w",
-		"typecheck": "tsc",
-		"lint": "eslint"
+		"lint": "tsc && eslint"
 	},
 	"dependencies": {
 		"@clack/prompts": "^1.4.0",

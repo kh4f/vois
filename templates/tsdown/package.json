@@ -3,11 +3,9 @@
 	"description": "🧩 Vois + tsdown Template",
 	"type": "module",
 	"scripts": {
-		"dev": "tsdown",
-		"watch": "tsdown -w",
-		"prod": "bun -b tsdown -p",
-		"typecheck": "tsc",
-		"lint": "eslint"
+		"dev": "tsdown -w",
+		"build": "tsdown",
+		"lint": "tsc && eslint"
 	},
 	"devDependencies": {
 		"@kh4f/eslint-config": "^0.3.0",

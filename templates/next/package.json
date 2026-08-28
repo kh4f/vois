@@ -4,12 +4,10 @@
 	"type": "module",
 	"scripts": {
 		"dev": "next",
-		"prod": "next build",
+		"build": "next build",
 		"preview": "next start",
-		"typecheck": "tsc",
-		"lint": "eslint",
-		"prepare": "bunx next-dont",
-		"clean": "rm -rf .next"
+		"lint": "tsc && eslint",
+		"prepare": "bunx next-dont"
 	},
 	"dependencies": {
 		"next": "^16.2.7",

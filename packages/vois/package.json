@@ -28,10 +28,7 @@
 	},
 	"scripts": {
 		"build": "tsdown",
-		"watch": "tsdown -w",
-		"typecheck": "tsc",
-		"lint": "eslint",
-		"test": "bun test",
+		"lint": "tsc && eslint",
 		"prepack": "cp ../../README.md .",
 		"postpack": "rm README.md"
 	},

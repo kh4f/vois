@@ -4,10 +4,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"prod": "vite build",
+		"build": "vite build",
 		"preview": "vite preview",
-		"typecheck": "tsc",
-		"lint": "eslint"
+		"lint": "tsc && eslint"
 	},
 	"dependencies": {
 		"react": "^19.2.7",
