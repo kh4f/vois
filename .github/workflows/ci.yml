@@ -1,9 +1,11 @@
 name: CI
 
-on: { push: { branches: '**' } }
+on:
+  push:
+    branches: '**'
 
 jobs:
-  ci:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
