@@ -8,7 +8,6 @@
 		"preview": "next start",
 		"typecheck": "tsc",
 		"lint": "eslint",
-		"release": "bunx relion",
 		"prepare": "bunx next-dont",
 		"clean": "rm -rf .next"
 	},

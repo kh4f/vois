@@ -32,7 +32,6 @@
 		"typecheck": "tsc",
 		"lint": "eslint",
 		"test": "bun test",
-		"release": "bunx relion -t vois@",
 		"prepack": "cp ../../README.md .",
 		"postpack": "rm README.md"
 	},

@@ -7,8 +7,7 @@
 		"watch": "tsdown -w",
 		"prod": "bun -b tsdown -p",
 		"typecheck": "tsc",
-		"lint": "eslint",
-		"release": "bunx relion"
+		"lint": "eslint"
 	},
 	"devDependencies": {
 		"@kh4f/eslint-config": "^0.3.0",

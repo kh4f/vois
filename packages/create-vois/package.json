@@ -15,8 +15,7 @@
 		"build": "tsdown",
 		"watch": "tsdown -w",
 		"typecheck": "tsc",
-		"lint": "eslint",
-		"release": "bunx relion -t create-vois@"
+		"lint": "eslint"
 	},
 	"dependencies": {
 		"@clack/prompts": "^1.4.0",
