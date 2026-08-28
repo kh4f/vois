@@ -14,44 +14,37 @@
         "typescript-eslint": "^8.68.0",
       },
     },
-    "packages/create-voicss": {
-      "name": "create-voicss",
-      "version": "0.1.1",
+    "packages/create-vois": {
+      "name": "create-vois",
+      "version": "0.0.0",
       "bin": "dist/index.js",
       "dependencies": {
         "@clack/prompts": "^1.4.0",
         "giget": "^3.2.0",
       },
     },
-    "packages/next": {
-      "name": "@voicss/next",
-      "version": "0.2.0",
-      "devDependencies": {
-        "voicss": "workspace:*",
-      },
-      "peerDependencies": {
-        "next": "*",
-      },
-    },
-    "packages/vite": {
-      "name": "@voicss/vite",
-      "version": "0.2.3",
+    "packages/vois": {
+      "name": "vois",
+      "version": "0.0.0",
       "dependencies": {
         "magic-string": "^0.30.17",
       },
       "devDependencies": {
-        "voicss": "workspace:*",
+        "@types/node": "^25.9.2",
+        "next": "^16.2.7",
+        "vite": "^8.0.16",
       },
       "peerDependencies": {
+        "next": "*",
         "vite": "*",
       },
-    },
-    "packages/voicss": {
-      "name": "voicss",
-      "version": "0.1.3",
+      "optionalPeers": [
+        "next",
+        "vite",
+      ],
     },
     "templates/next": {
-      "name": "voicss-next",
+      "name": "vois-next",
       "dependencies": {
         "next": "^16.2.7",
         "react": "^19.2.7",
@@ -66,33 +59,31 @@
         "@types/node": "25.9.2",
         "@types/react": "^19.2.17",
         "@types/react-dom": "^19.2.3",
-        "@voicss/eslint": "^0.3.0",
-        "@voicss/next": "workspace:*",
         "eslint": "^10.4.1",
         "eslint-plugin-react-hooks": "^7.1.1",
         "jiti": "^2.7.0",
         "typescript": "^6.0.3",
         "typescript-eslint": "^8.61.0",
+        "vois": "workspace:*",
       },
     },
     "templates/tsdown": {
-      "name": "voicss-tsdown",
+      "name": "vois-tsdown",
       "devDependencies": {
         "@eslint/js": "^10.0.1",
         "@stylistic/eslint-plugin": "^5.10.0",
         "@tsdown/css": "^0.22.2",
         "@types/bun": "^1.3.14",
-        "@voicss/eslint": "^0.3.0",
-        "@voicss/vite": "workspace:*",
         "eslint": "^10.4.1",
         "jiti": "^2.7.0",
         "tsdown": "^0.22.2",
         "typescript": "^6.0.3",
         "typescript-eslint": "^8.61.0",
+        "vois": "workspace:*",
       },
     },
     "templates/vite": {
-      "name": "voicss-vite",
+      "name": "vois-vite",
       "dependencies": {
         "react": "^19.2.7",
         "react-dom": "^19.2.7",
@@ -105,14 +96,13 @@
         "@types/react": "^19.2.17",
         "@types/react-dom": "^19.2.3",
         "@vitejs/plugin-react": "^6.0.2",
-        "@voicss/eslint": "^0.3.0",
-        "@voicss/vite": "workspace:*",
         "eslint": "^10.4.1",
         "eslint-plugin-react-hooks": "^7.1.1",
         "jiti": "^2.7.0",
         "typescript": "^6.0.3",
         "typescript-eslint": "^8.61.0",
         "vite": "^8.0.16",
+        "vois": "workspace:*",
       },
     },
   },
@@ -369,12 +359,6 @@
 
     "@vitejs/plugin-react": ["@vitejs/plugin-react@6.0.2", "", { "dependencies": { "@rolldown/pluginutils": "^1.0.0" }, "peerDependencies": { "@rolldown/plugin-babel": "^0.1.7 || ^0.2.0", "babel-plugin-react-compiler": "^1.0.0", "vite": "^8.0.0" }, "optionalPeers": ["@rolldown/plugin-babel", "babel-plugin-react-compiler"] }, "sha512-DlSMqo4WhThw4vB8Mpn0Woe9J+Jfq1geJ61AKW0QEgLzGMNwtIMdxbDUzLxcun8W7NbJO0e2Jg/Nxm3cCSVzzg=="],
 
-    "@voicss/eslint": ["@voicss/eslint@0.3.0", "", { "peerDependencies": { "@eslint/core": "*" } }, "sha512-DSofwj7X8cmANW4y9/K1WZ6aZn1ZaqpoR33ISdnF+wHBwB7iURgC1MPGqSMDjkSKdDZPM3z1VBQWt57RaoTeAA=="],
-
-    "@voicss/next": ["@voicss/next@workspace:packages/next"],
-
-    "@voicss/vite": ["@voicss/vite@workspace:packages/vite"],
-
     "@yuku-codegen/binding-android-arm64": ["@yuku-codegen/binding-android-arm64@0.8.7", "", { "os": "android", "cpu": "arm64" }, "sha512-C/0zV5IhgVdYhGJTwrY0v8dknxlhiKwtVJkMUaexu9/QvRmzlV4vfU3hZlUSgqc2BxQHntL1mCVbDq8j0FRFDw=="],
 
     "@yuku-codegen/binding-darwin-arm64": ["@yuku-codegen/binding-darwin-arm64@0.8.7", "", { "os": "darwin", "cpu": "arm64" }, "sha512-/u+REDMI4a0/lsJXTM4c53/w31OGZLOReZIyg62uhgLs0kc8NHsj/nOcxTdlQjq5gi0zhdkccD9LaLTXcdzPvw=="],
@@ -457,7 +441,7 @@
 
     "convert-source-map": ["convert-source-map@2.0.0", "", {}, "sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg=="],
 
-    "create-voicss": ["create-voicss@workspace:packages/create-voicss"],
+    "create-vois": ["create-vois@workspace:packages/create-vois"],
 
     "cross-spawn": ["cross-spawn@7.0.6", "", { "dependencies": { "path-key": "^3.1.0", "shebang-command": "^2.0.0", "which": "^2.0.1" } }, "sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA=="],
 
@@ -729,13 +713,13 @@
 
     "vite": ["vite@8.0.16", "", { "dependencies": { "lightningcss": "^1.32.0", "picomatch": "^4.0.4", "postcss": "^8.5.15", "rolldown": "1.0.3", "tinyglobby": "^0.2.17" }, "optionalDependencies": { "fsevents": "~2.3.3" }, "peerDependencies": { "@types/node": "^20.19.0 || >=22.12.0", "@vitejs/devtools": "^0.1.18", "esbuild": "^0.27.0 || ^0.28.0", "jiti": ">=1.21.0", "less": "^4.0.0", "sass": "^1.70.0", "sass-embedded": "^1.70.0", "stylus": ">=0.54.8", "sugarss": "^5.0.0", "terser": "^5.16.0", "tsx": "^4.8.1", "yaml": "^2.4.2" }, "optionalPeers": ["@types/node", "@vitejs/devtools", "esbuild", "jiti", "less", "sass", "sass-embedded", "stylus", "sugarss", "terser", "tsx", "yaml"], "bin": { "vite": "bin/vite.js" } }, "sha512-h9bXPmJichP5fLmVQo3PyaGSDE2n3aPuomeAlVRm0JLmt4rY6zmPKd59HYI4LNW8oTK7tlTsuC7l/m7awx9Jcw=="],
 
-    "voicss": ["voicss@workspace:packages/voicss"],
+    "vois": ["vois@workspace:packages/vois"],
 
-    "voicss-next": ["voicss-next@workspace:templates/next"],
+    "vois-next": ["vois-next@workspace:templates/next"],
 
-    "voicss-tsdown": ["voicss-tsdown@workspace:templates/tsdown"],
+    "vois-tsdown": ["vois-tsdown@workspace:templates/tsdown"],
 
-    "voicss-vite": ["voicss-vite@workspace:templates/vite"],
+    "vois-vite": ["vois-vite@workspace:templates/vite"],
 
     "which": ["which@2.0.2", "", { "dependencies": { "isexe": "^2.0.0" }, "bin": { "node-which": "./bin/node-which" } }, "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA=="],
 

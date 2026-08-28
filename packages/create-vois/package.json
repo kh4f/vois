@@ -12,9 +12,8 @@
 	"type": "module",
 	"bin": "dist/index.js",
 	"scripts": {
-		"dev": "tsdown",
+		"build": "tsdown",
 		"watch": "tsdown -w",
-		"prod": "bun -b tsdown -p",
 		"typecheck": "tsc",
 		"lint": "eslint",
 		"release": "bunx relion -t create-vois@"

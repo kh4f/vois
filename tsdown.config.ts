@@ -1,10 +1,5 @@
-import { resolve } from 'node:path'
-import type { UserConfig } from 'tsdown'
+import { defineConfig } from 'tsdown'
 
-const prod = process.argv.includes('-p')
-
-export default {
-	minify: prod,
-	sourcemap: prod ? false : 'inline',
+export default defineConfig({
 	fixedExtension: false,
-} satisfies UserConfig
+})

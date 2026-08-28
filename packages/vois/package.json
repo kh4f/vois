@@ -27,9 +27,8 @@
 		}
 	},
 	"scripts": {
-		"dev": "tsdown",
+		"build": "tsdown",
 		"watch": "tsdown -w",
-		"prod": "bun -b tsdown -p",
 		"typecheck": "tsc",
 		"lint": "eslint",
 		"test": "bun test",
