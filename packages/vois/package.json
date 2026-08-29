@@ -26,10 +26,6 @@
 	"dependencies": {
 		"magic-string": "^0.30.17"
 	},
-	"devDependencies": {
-		"next": "^16.2.7",
-		"vite": "^8.0.16"
-	},
 	"peerDependencies": {
 		"next": "*",
 		"vite": "*"
@@ -37,5 +33,9 @@
 	"peerDependenciesMeta": {
 		"next": { "optional": true },
 		"vite": { "optional": true }
+	},
+	"devDependencies": {
+		"next": "^16.2.7",
+		"vite": "^8.0.16"
 	}
 }
