@@ -10,8 +10,6 @@
 	"keywords": ["vois", "vois-core", "css-in-ts", "vite-plugin", "next-plugin"],
 	"files": ["dist", "README.md"],
 	"type": "module",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
 	"exports": {
 		".": { "import": "./dist/index.js", "types": "./dist/index.d.ts" },
 		"./vite": { "import": "./dist/vite.js", "types": "./dist/vite.d.ts" },
