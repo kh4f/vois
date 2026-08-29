@@ -1,6 +1,6 @@
 {
 	"name": "vois-vite",
-	"description": "🧩 Vois + Vite Template",
+	"description": "🧩 Vois × Vite Template",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",

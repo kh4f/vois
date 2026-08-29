@@ -1,6 +1,6 @@
 {
 	"name": "vois-tsdown",
-	"description": "🧩 Vois + tsdown Template",
+	"description": "🧩 Vois × tsdown Template",
 	"type": "module",
 	"scripts": {
 		"dev": "tsdown -w",

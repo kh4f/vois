@@ -1,6 +1,6 @@
 {
 	"name": "vois-next",
-	"description": "🧩 Vois + Next.js Template",
+	"description": "🧩 Vois × Next.js Template",
 	"type": "module",
 	"scripts": {
 		"dev": "next",

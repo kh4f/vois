@@ -1,7 +1,7 @@
 {
 	"name": "create-vois",
 	"version": "0.0.0",
-	"description": "🪄 Vois Starter CLI",
+	"description": "🪄 Vois Project Scaffolder",
 	"author": "kh4f",
 	"license": "MIT",
 	"repository": "https://github.com/kh4f/vois",
