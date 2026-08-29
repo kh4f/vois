@@ -31,8 +31,8 @@
         "vite": "^8.0.16",
       },
       "peerDependencies": {
-        "next": "*",
-        "vite": "*",
+        "next": "^16",
+        "vite": "^8",
       },
       "optionalPeers": [
         "next",

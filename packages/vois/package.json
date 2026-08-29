@@ -27,8 +27,8 @@
 		"magic-string": "^0.30.17"
 	},
 	"peerDependencies": {
-		"next": "*",
-		"vite": "*"
+		"next": "^16",
+		"vite": "^8"
 	},
 	"peerDependenciesMeta": {
 		"next": { "optional": true },
