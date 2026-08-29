@@ -8,7 +8,7 @@
 		"lint": "tsc && eslint"
 	},
 	"devDependencies": {
-		"@kh4f/eslint-config": "^0.4.2",
+		"@kh4f/eslint-config": "^0.4.3",
 		"@tsdown/css": "^0.22.2",
 		"vois": "workspace:*",
 		"eslint": "^10.4.1",
