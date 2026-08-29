@@ -2,9 +2,7 @@
 	"compilerOptions": {
 		"noEmit": true,
 		"skipLibCheck": true,
-		"verbatimModuleSyntax": true,
-		"jsx": "react-jsx",
-		"paths": { "@/*": ["./src/*"] },
+		"jsx": "react-jsx"
 	},
 	"include": ["**/*.ts", "**/*.tsx"]
 }
