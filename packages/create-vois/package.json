@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"repository": "https://github.com/kh4f/vois",
 	"bugs": "https://github.com/kh4f/vois/issues",
-	"homepage": "https://github.com/kh4f/vois#readme",
+	"homepage": "https://github.com/kh4f/vois",
 	"keywords": ["vois", "create-vois", "css-in-ts"],
 	"files": ["dist"],
 	"type": "module",
