@@ -7,7 +7,7 @@
 	"repository": "https://github.com/kh4f/vois",
 	"bugs": "https://github.com/kh4f/vois/issues",
 	"homepage": "https://github.com/kh4f/vois",
-	"keywords": ["vois", "vois-core", "css-in-ts", "vite-plugin", "next-plugin"],
+	"keywords": ["css-in-ts", "compile-time-css", "zero-runtime-css", "vite-plugin", "next-plugin"],
 	"files": ["dist", "README.md"],
 	"type": "module",
 	"exports": {

@@ -7,7 +7,7 @@
 	"repository": "https://github.com/kh4f/vois",
 	"bugs": "https://github.com/kh4f/vois/issues",
 	"homepage": "https://github.com/kh4f/vois",
-	"keywords": ["vois", "create-vois", "css-in-ts"],
+	"keywords": ["vois", "vois-template", "project-generator", "scaffold", "starter"],
 	"files": ["dist"],
 	"type": "module",
 	"bin": "dist/index.js",
