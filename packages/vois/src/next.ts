@@ -2,7 +2,7 @@ import { mkdirSync, writeFileSync } from 'node:fs'
 import { join, resolve, relative, dirname } from 'node:path'
 import { createHash } from 'node:crypto'
 import type { NextConfig } from 'next'
-import { extractCss } from './index'
+import { extractCss } from './'
 
 export const voisTurboRule: Required<Required<NextConfig>['turbopack']>['rules'] = {
 	'*': {

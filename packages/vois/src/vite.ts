@@ -1,6 +1,6 @@
 import type { Plugin } from 'vite'
 import MagicString from 'magic-string'
-import { extractCss } from './index'
+import { extractCss } from './'
 
 const CSS_EXTRACTABLE_FILES = /\.(ts|tsx)$/
 const VIRTUAL_PREFIX = 'virtual:vois/'

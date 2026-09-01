@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test'
-import { extractCss } from './index'
+import { extractCss } from './'
 
 test('extractCss', () => {
 	expect(extractCss(`
