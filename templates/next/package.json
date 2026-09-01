@@ -10,18 +10,18 @@
 		"prepare": "bunx next-dont"
 	},
 	"dependencies": {
-		"next": "^16.2.7",
-		"react": "^19.2.7",
-		"react-dom": "^19.2.7"
+		"next": "^16.3.4",
+		"react": "^19.2.8",
+		"react-dom": "^19.2.8"
 	},
 	"devDependencies": {
 		"@eslint-react/eslint-plugin": "^5.8.16",
 		"@kh4f/eslint-config": "^0.4.3",
-		"@next/eslint-plugin-next": "^16.3.3",
+		"@next/eslint-plugin-next": "^16.3.4",
 		"@types/node": "^26.4.0",
-		"@types/react": "^19.2.17",
-		"@types/react-dom": "^19.2.3",
-		"eslint": "^10.4.1",
+		"@types/react": "^19.2.18",
+		"@types/react-dom": "^19.2.5",
+		"eslint": "^10.9.1",
 		"eslint-plugin-react-hooks": "^7.1.1",
 		"typescript": "^6.0.3",
 		"vois": "workspace:*"
