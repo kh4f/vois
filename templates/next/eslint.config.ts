@@ -1,3 +1,8 @@
+import { defineConfig } from "eslint/config";
 import kh4f from '@kh4f/eslint-config'
+import vois from 'vois-eslint'
 
-export default await kh4f({ next: true })
+export default defineConfig([
+	await kh4f({ next: true }),
+	vois.configs.recommended,
+])

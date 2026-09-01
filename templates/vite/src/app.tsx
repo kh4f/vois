@@ -4,7 +4,7 @@ export default function App() {
 
 void `css
 .title {
-	font-size: 14rem;
+		font-size: 14rem;
 	font-family: 'Tiny5', sans-serif;
 	color: var(--foreground);
 	text-align: center;

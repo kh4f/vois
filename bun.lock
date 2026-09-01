@@ -65,6 +65,7 @@
         "eslint-plugin-react-hooks": "^7.1.1",
         "typescript": "^6.0.3",
         "vois": "workspace:*",
+        "vois-eslint": "workspace:*",
       },
     },
     "templates/tsdown": {
@@ -76,6 +77,7 @@
         "tsdown": "^0.22.14",
         "typescript": "^6.0.3",
         "vois": "workspace:*",
+        "vois-eslint": "workspace:*",
       },
     },
     "templates/vite": {
@@ -95,6 +97,7 @@
         "typescript": "^6.0.3",
         "vite": "^8.2.2",
         "vois": "workspace:*",
+        "vois-eslint": "workspace:*",
       },
     },
   },
