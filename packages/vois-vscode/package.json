@@ -1,0 +1,43 @@
+{
+	"name": "vois-vscode",
+	"displayName": "Vois",
+	"version": "0.0.0",
+	"description": "💎 Native CSS Features for Vois",
+	"author": "kh4f",
+	"publisher": "kh4f",
+	"license": "MIT",
+	"repository": "https://github.com/kh4f/vois-vscode",
+	"homepage": "https://github.com/kh4f/vois-vscode",
+	"bugs": "https://github.com/kh4f/vois-vscode/issues",
+	"keywords": ["vois", "vois-vscode", "css-in-ts"],
+	"categories": ["Programming Languages", "Formatters", "Snippets", "Linters"],
+	"icon": "icon.png",
+	"galleryBanner": { "color": "#221816", "theme": "dark" },
+	"engines": { "vscode": ">=1.136.0" },
+	"files": ["package.json", "README.md", "LICENSE", "CHANGELOG.md", "dist", "syntaxes", "icon.png"],
+	"type": "module",
+	"main": "dist/client.mjs",
+	"activationEvents": ["onLanguage:typescript", "onLanguage:typescriptreact"],
+	"contributes": {
+		"grammars": [{
+			"scopeName": "vois.css.injection",
+			"path": "syntaxes/injection.json",
+			"injectTo": ["source.ts", "source.tsx"],
+			"embeddedLanguages": { "meta.embedded.block.css": "css" }
+		}]
+	},
+	"scripts": {
+		"build": "tsdown",
+		"lint": "tsc && eslint",
+		"package": "bun build && vsce package"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.118.0",
+		"@vscode/emmet-helper": "^2.11.0",
+		"@vscode/vsce": "^3.9.1",
+		"vscode-css-languageservice": "^6.3.10",
+		"vscode-languageclient": "^9.0.1",
+		"vscode-languageserver": "^9.0.1",
+		"vscode-languageserver-textdocument": "^1.0.12"
+	}
+}

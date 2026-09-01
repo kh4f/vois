@@ -1,0 +1,10 @@
+{
+	"version": "0.2.0",
+	"configurations": [{
+		"name": "Debug VS Code Extension",
+		"type": "extensionHost",
+		"request": "launch",
+		"preLaunchTask": "build vois-vscode",
+		"outFiles": ["${workspaceFolder}/packages/vois-vscode/dist/**/*.mjs"],
+	}]
+}
