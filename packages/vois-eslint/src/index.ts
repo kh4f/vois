@@ -22,6 +22,7 @@ plugin.configs = { recommended: {
 		'vois/spacing': 'error',
 		'vois/quote-style': ['error', 'single'],
 		'vois/no-multiple-empty-lines': 'error',
+		'@typescript-eslint/no-meaningless-void-operator': 'off',
 	},
 } }
 
