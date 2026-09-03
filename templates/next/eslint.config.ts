@@ -1,4 +1,4 @@
-import { defineConfig } from "eslint/config";
+import { defineConfig } from 'eslint/config'
 import kh4f from '@kh4f/eslint-config'
 import vois from 'vois-eslint'
 
