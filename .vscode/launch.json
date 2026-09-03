@@ -5,6 +5,6 @@
 		"type": "extensionHost",
 		"request": "launch",
 		"preLaunchTask": "build vois-vscode",
-		"outFiles": ["${workspaceFolder}/packages/vois-vscode/dist/**/*.mjs"],
+		"args": ["--extensionDevelopmentPath=${workspaceFolder}/packages/vois-vscode"]
 	}]
 }
