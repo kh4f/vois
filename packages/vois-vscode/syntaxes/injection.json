@@ -1,5 +1,5 @@
 {
-	"scopeName": "voicss.css.injection",
+	"scopeName": "vois.css.injection",
 	"injectionSelector": "L:source",
 	"patterns": [{
 		"begin": "(?<=^\\s*?void `css\\s)",
