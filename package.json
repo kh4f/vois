@@ -1,5 +1,4 @@
 {
-	"type": "module",
 	"workspaces": ["packages/*", "templates/*"],
 	"scripts": {
 		"build": "bun -F './packages/*' build",

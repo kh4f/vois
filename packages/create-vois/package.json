@@ -9,7 +9,6 @@
 	"bugs": "https://github.com/kh4f/vois/issues",
 	"keywords": ["vois", "vois-template", "project-generator", "scaffold", "starter"],
 	"files": ["dist"],
-	"type": "module",
 	"bin": "dist/index.mjs",
 	"scripts": {
 		"build": "tsdown",

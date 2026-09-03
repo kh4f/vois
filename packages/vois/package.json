@@ -9,7 +9,6 @@
 	"bugs": "https://github.com/kh4f/vois/issues",
 	"keywords": ["css-in-ts", "compile-time-css", "zero-runtime-css", "vite-plugin", "next-plugin"],
 	"files": ["dist", "README.md"],
-	"type": "module",
 	"exports": {
 		".": { "import": "./dist/index.mjs", "types": "./dist/index.d.mts" },
 		"./vite": { "import": "./dist/vite.mjs", "types": "./dist/vite.d.mts" },
