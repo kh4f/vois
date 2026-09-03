@@ -7,7 +7,7 @@ let client: LanguageClient | undefined
 export const activate = (context: ExtensionContext) => {
 	const clientOptions: LanguageClientOptions = { documentSelector: ['typescript', 'typescriptreact'] }
 
-	const serverModule = context.asAbsolutePath(join('dist', 'server.js'))
+	const serverModule = context.asAbsolutePath(join('dist', 'server.mjs'))
 	const serverOptions: ServerOptions = {
 		run: { module: serverModule, transport: TransportKind.ipc },
 		debug: { module: serverModule, transport: TransportKind.ipc },
