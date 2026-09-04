@@ -7,7 +7,7 @@
 		"build": "next build",
 		"preview": "next start",
 		"lint": "tsc && eslint",
-		"prepare": "bunx next-dont"
+		"prepare": "bunx tskeep"
 	},
 	"dependencies": {
 		"next": "^16.3.4",
